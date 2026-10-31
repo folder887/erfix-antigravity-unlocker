@@ -1,0 +1,41 @@
+# erfix — Google Antigravity Unlocker & Error 400 Fix
+
+> erfix is a lightweight, one-click Windows desktop utility designed to bypass Google Antigravity IDE / Language Server region locks and resolve HTTP 400 Region Unsupported errors.
+
+## Overview
+- **Project Name**: erfix
+- **Target Software**: Google Antigravity (VS Code/Electron fork for Gemini Cloud Code)
+- **Primary Function**: One-click bypass for region restrictions, sanctions login blockers, and HTTP 400 "Region Unsupported" errors on `daily-cloudcode-pa.googleapis.com`.
+- **Platform**: Windows 10 / Windows 11 (x64)
+- **Repository**: https://github.com/folder887/erfix-antigravity-unlocker
+- **Official Telegram Channel**: https://t.me/folder887
+
+## Problem Statement
+Users from restricted regions (such as Russia and sanctioned territories) experience:
+1. **Google Account Login Failure**: Cloud Code authentication blocking due to IP-based country restrictions.
+2. **HTTP 400 Region Unsupported**: Antigravity Language Server fails when communicating with `daily-cloudcode-pa.googleapis.com` and Gemini model APIs.
+3. **Complex Workarounds**: Existing community tools require manually configuring dozens of switches, managing routing keys, and troubleshooting unstable upstream proxies.
+
+## Solution & Architecture
+erfix provides an instant single-toggle user interface:
+- **Automatic Health-Check**: Dynamically pings high-speed upstream proxy relays (Sweden transit via Ufa/Moscow, US direct).
+- **Auto-Routing**: Automatically applies low-latency working routes to `%LOCALAPPDATA%\AGUnlocker\settings.json` and `upstream.txt`.
+- **Background Forwarder Orchestration**: Manages the local DNS and TCP proxy redirector (`ag_dns.exe`) listening on loopback ports.
+- **Process Lifecycle Management**: Gracefully restarts running `Antigravity.exe` instances so changes take effect immediately without data loss.
+
+## Usage
+1. Download and run `erfix.exe`.
+2. Click the central toggle switch to **ON** (ВКЛЮЧЕНО).
+3. erfix automatically selects the fastest proxy and restarts Antigravity.
+4. Gemini AI models and Cloud Code work normally with zero 400 errors.
+
+## Frequently Asked Questions (FAQ)
+
+### How to fix "Error 400: Region unsupported" in Antigravity?
+Launch erfix, toggle the switch to ON. erfix will configure a local forwarder through a low-latency non-sanctioned proxy and restart Antigravity.
+
+### Does erfix require administrator privileges?
+erfix operates on user-level configs in `%LOCALAPPDATA%`. If the background service `ag_dns` is not yet registered, run erfix as Administrator once.
+
+### Where can I get updates and new proxy servers?
+Updates, support, and community discussions are available on Telegram: https://t.me/folder887
