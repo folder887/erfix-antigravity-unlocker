@@ -6,7 +6,7 @@
 - **Project Name**: erfix
 - **Target Software**: Google Antigravity (VS Code/Electron fork for Gemini Cloud Code)
 - **Primary Function**: One-click bypass for region restrictions, sanctions login blockers, and HTTP 400 "Region Unsupported" errors on `daily-cloudcode-pa.googleapis.com`.
-- **Platform**: Windows 10 / Windows 11 (x64)
+- **Platform**: Windows 10 / Windows 11 (x64), Linux (GNOME, KDE, CLI)
 - **Repository**: https://github.com/folder887/erfix-antigravity-unlocker
 - **Official Telegram Channel**: https://t.me/folder887
 

@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/folder887/erfix-antigravity-unlocker/releases"><img src="https://img.shields.io/github/v/release/folder887/erfix-antigravity-unlocker?color=00C8B3&style=for-the-badge" alt="Release"></a>
   <a href="https://t.me/folder887"><img src="https://img.shields.io/badge/Telegram-%40folder887-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Channel"></a>
-  <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20x64-blue?style=for-the-badge" alt="Platform Windows"></a>
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue?style=for-the-badge" alt="Platform Windows and Linux"></a>
   <img src="https://img.shields.io/badge/Status-Working-brightgreen?style=for-the-badge" alt="Status Working"></a>
 </p>
 
@@ -15,7 +15,7 @@
 
 ## 🎯 Что это такое?
 
-**erfix** — легкая, стильная и быстрая Windows-утилита для обхода региональных санкций, снятия ошибки **HTTP 400 (Region Unsupported)** и нормализации работы **Google Antigravity** (IDE / Gemini Cloud Code / Language Server на `daily-cloudcode-pa.googleapis.com`) в **один клик**.
+**erfix** — легкая, стильная и быстрая кроссплатформенная утилита (Windows / Linux) для обхода региональных санкций, снятия ошибки **HTTP 400 (Region Unsupported)** и нормализации работы **Google Antigravity** (IDE / Gemini Cloud Code / Language Server на `daily-cloudcode-pa.googleapis.com`) в **один клик**.
 
 Больше никаких десятков тумблеров, ручного подбора портов и падений сессий. Нажал кнопку — всё заработало.
 
@@ -61,6 +61,26 @@
 Для управления пользовательскими настройками права администратора не требуются. Если на ПК еще не была инициализирована фоновая служба обхода, первый запуск рекомендуется выполнить от имени Администратора.
 </p>
 </details>
+
+---
+
+## 🐧 Быстрый старт на Linux
+
+```bash
+# Клонировать репозиторий
+git clone https://github.com/folder887/erfix-antigravity-unlocker.git
+cd erfix-antigravity-unlocker
+
+# Установка ярлыка в меню (GNOME/KDE) и команды в PATH
+bash install-linux.sh
+
+# Запуск в 1 клик (автоматически выберет GUI или удобный терминальный режим):
+erfix
+# Управление из терминала:
+erfix start   # включить обход и перезапустить Antigravity
+erfix status  # проверить статус и текущий прокси
+erfix stop    # отключить обход
+```
 
 ---
 
